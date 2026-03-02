@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: artifact
-          path: *.ipa
+          path: ./*.ipa
