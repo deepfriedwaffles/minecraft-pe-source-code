@@ -17,13 +17,13 @@ jobs:
         run: |
           cd handheld/project/iosproj
           xcodebuild -scheme minecraftpe -derivedDataPath build -destination 'generic/platform=iOS' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-          mkdir -p Payload packages
+          mkdir -p Payload
           cp -R build/Build/Products/Debug-iphoneos/minecraftpe.app Payload/
-          zip -r packages/minecraftpe.ipa Payload
+          zip -r minecraftpe.ipa Payload
           rm -rf Payload
 
       - name: Upload artifact
         uses: actions/upload-artifact@main
         with:
           name: artifact
-          path: packages/*.ipa
+          path: *.ipa
