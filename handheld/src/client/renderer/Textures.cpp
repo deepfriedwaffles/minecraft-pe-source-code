@@ -6,6 +6,8 @@
 #include "../../platform/time.h"
 #include "../../AppPlatform.h"
 
+const TextureId Textures::InvalidId;
+
 /*static*/ int  Textures::textureChanges = 0;
 /*static*/ bool Textures::MIPMAP = false;
 

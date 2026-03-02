@@ -8,21 +8,21 @@ NetherReactorPattern::NetherReactorPattern( ) {
 	{
 		// Level 0
 		{
-			{goldId, stoneId, goldId},
-			{stoneId, stoneId, stoneId},
-			{goldId, stoneId, goldId}
+            {static_cast<unsigned int>(goldId), static_cast<unsigned int>(stoneId), static_cast<unsigned int>(goldId)},
+            {static_cast<unsigned int>(stoneId), static_cast<unsigned int>(stoneId), static_cast<unsigned int>(stoneId)},
+            {static_cast<unsigned int>(goldId), static_cast<unsigned int>(stoneId), static_cast<unsigned int>(goldId)}
 		},
 			// Level 1
 		{
-			{stoneId, 0, stoneId},
-			{0, netherCoreId, 0},
-			{stoneId, 0, stoneId}
+            {static_cast<unsigned int>(stoneId), 0, static_cast<unsigned int>(stoneId)},
+            {0, static_cast<unsigned int>(netherCoreId), 0},
+            {static_cast<unsigned int>(stoneId), 0, static_cast<unsigned int>(stoneId)}
 		},
 			// Level 2
 		{
-			{0, stoneId, 0},
-			{stoneId, stoneId, stoneId},
-			{0, stoneId, 0}
+            {0, static_cast<unsigned int>(stoneId), 0},
+            {static_cast<unsigned int>(stoneId), static_cast<unsigned int>(stoneId), static_cast<unsigned int>(stoneId)},
+            {0, static_cast<unsigned int>(stoneId), 0}
 		}
 	};
 	for(int setLevel = 0; setLevel <= 2; ++setLevel) {
