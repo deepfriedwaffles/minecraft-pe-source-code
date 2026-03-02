@@ -1,0 +1,6 @@
+# macOS yucky DS Store files
+.DS_Store
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
