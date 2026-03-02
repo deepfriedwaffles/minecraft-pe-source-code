@@ -25,5 +25,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@main
         with:
-          name: artifact
-          path: ./*.ipa
+          name: minecraftpe-ios
+          path: handheld/project/iosproj/minecraftpe.ipa
