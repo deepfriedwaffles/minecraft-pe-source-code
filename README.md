@@ -12,7 +12,7 @@ This repository contains the original source code for **Minecraft: Pocket Editio
 Right now you have to compile this yourself, but there's also an Action thanks to pengubow for making an ipa file.
 
 > [!WARNING]
-> The `main` branch is preserved for historical purposes and contains legacy 32-bit code (armv7) that is **not compatible** with modern 64-bit iOS devices or recent versions of Xcode. You could try to compile it with an old version of Xcode, but that's untested an I'm not sure if that works
+> The `historical` branch is preserved for historical purposes and contains legacy 32-bit code (armv7) that is **not compatible** with modern 64-bit iOS devices or recent versions of Xcode. You could try to compile it with an old version of Xcode, but that's untested an I'm not sure if that works
 
 ## Modern iDevice Support (arm64)
 
