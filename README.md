@@ -4,9 +4,9 @@
 > `main` was renamed to `historical`. On your local branch, run:
 > ```
 > git branch -m main historical
-     git fetch origin
-     git branch -u origin/historical historical
-     git remote prune origin```
+> git fetch origin
+> git branch -u origin/historical historical
+> git remote prune origin```
 
 This repository contains the original source code for **Minecraft: Pocket Edition v0.6.1**, supporting both Android and iOS platforms.
 Right now you have to compile this yourself, but there's also an Action thanks to pengubow for making an ipa file.
