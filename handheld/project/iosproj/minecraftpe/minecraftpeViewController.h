@@ -66,6 +66,7 @@
 - (void)showDialog_CreateWorld;
 - (void)showDialog_MainMenuOptions;
 - (void)showDialog_RenameMPWorld;
+- (void)showDialog_SetUsername;
 
 - (void)showKeyboard;
 - (void)hideKeyboard;
