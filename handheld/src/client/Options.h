@@ -177,6 +177,7 @@ public:
 	}
 
 	void initDefaultValues();
+	void setFilePath(const std::string& path) { optionsFile.setPath(path); }
 
     std::string getKeyDescription(int i) {
         //Language language = Language.getInstance();

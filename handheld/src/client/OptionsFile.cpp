@@ -12,6 +12,10 @@ OptionsFile::OptionsFile() {
 #endif
 }
 
+void OptionsFile::setPath(const std::string& path) {
+	settingsPath = path + "/options.txt";
+}
+
 void OptionsFile::save(const StringVector& settings) {
 	FILE* pFile = fopen(settingsPath.c_str(), "w");
 	if(pFile != NULL) {
