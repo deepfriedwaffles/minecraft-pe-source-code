@@ -4,18 +4,11 @@ This repository contains the original source code for **Minecraft: Pocket Editio
 Right now you have to compile this yourself, but I'll supply a precompiled .ipa to put on you iPhone soon! (not everyone has Macs!)
 
 > [!WARNING]
-> The `main` branch is preserved for historical purposes and contains legacy 32-bit code (armv7) that is **not compatible** with modern 64-bit iOS devices or recent versions of Xcode. You could try to compile it with an old version of Xcode, but that's untested an I'm not sure if that works
+> This branch is preserved for historical purposes and contains legacy 32-bit code (armv7) that is **not compatible** with modern 64-bit iOS devices or recent versions of Xcode. You could try to compile it with an old version of Xcode, but that's untested an I'm not sure if that works
 
 ## Modern iDevice Support (arm64)
 
 To build and run the game, you have to use the `arm64-build` branch. This branch has been modernized to comply with the new C++ standards as they have changed since 2011. Also includes fixes for modern A-series chips to actually get the game running.
-
-* **Architecture:** Migrated from `armv7` to `arm64`.
-* **Legacy Patching:** Fixed header file extensions (e.g., `.height` back to `.h`) and resolved ambiguous function redefinitions.
-
----
-
-## Cloning & Compiling Instructions
 
 Follow these steps to get the game running on your own physical iOS device using Xcode. You will need a Mac. If you don't have a Mac, you could try using a macOS virtual machine. I'd reccomend using Ventura or newer.
 
@@ -26,7 +19,7 @@ Open your terminal and clone the repository, ensuring you switch to the `arm64-b
 ```bash
 git clone https://github.com/deepfriedwaffles/minecraft-pe-source-code.git
 cd minecraft-pe-source-code
-git checkout arm64-build
+git checkout historical
 
 ```
 
