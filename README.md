@@ -6,13 +6,14 @@
 > git branch -m main historical
 > git fetch origin
 > git branch -u origin/historical historical
-> git remote prune origin```
+> git remote prune origin
+> ```
 
 This repository contains the original source code for **Minecraft: Pocket Edition v0.6.1**, supporting both Android and iOS platforms.
 Right now you have to compile this yourself, but there's also an Action thanks to pengubow for making an ipa file.
 
 > [!WARNING]
-> The `historical` branch is preserved for historical purposes and contains legacy 32-bit code (armv7) that is **not compatible** with modern 64-bit iOS devices or recent versions of Xcode. You could try to compile it with an old version of Xcode, but that's untested an I'm not sure if that works
+> The `historical` branch is preserved for historical purposes and contains legacy 32-bit code (armv7) that is **not compatible** with modern 64-bit iOS devices or recent versions of Xcode. You could try to compile it with an old version of Xcode, but that's untested and I'm not sure if that works
 
 ## Modern iDevice Support (arm64)
 
@@ -65,7 +66,7 @@ This repository includes a GitHub Actions workflow that builds the iOS app and g
 ## Known Issues
 
 * **Display:** The game renders at a fixed 480x320 resolution and does not yet support the big iPhone displays.
-* **UI:** The Options menu is absolutely broken.
+* **UI:** The Options menu is regaining functionality (thanks EBro912) but is probably still not done yet.
 * **Multiplayer:** Local/Online multiplayer is currently untested on `arm64` and may require further RakNet patching.
 
 ---
