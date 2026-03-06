@@ -454,6 +454,28 @@ static NSThread* lastThread = nil;
     }
 }
 
+- (void)showDialog_SetUsername
+{
+    _dialogResultStatus = -1;
+    UIAlertController *alert = [UIAlertController
+        alertControllerWithTitle:@"Set Username"
+        message:@"Enter your name for LAN multiplayer"
+        preferredStyle:UIAlertControllerStyleAlert];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"Username";
+    }];
+    [alert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        self->_dialogResultStatus = 0;
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSString *text = alert.textFields.firstObject.text;
+        self->_dialogResultStrings.clear();
+        self->_dialogResultStrings.push_back(std::string([text UTF8String]));
+        self->_dialogResultStatus = 1;
+    }]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 - (int) getUserInputStatus {
     //NSLog(@"getUserI: %d\n", _dialogResultStatus);
     return _dialogResultStatus;
