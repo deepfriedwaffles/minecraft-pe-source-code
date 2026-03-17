@@ -604,6 +604,7 @@
 		F9077E952F54F8DC006FCF37 /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9077E912F54F8DC006FCF37 /* Slider.cpp */; };
 		F9077E982F54F9CB006FCF37 /* OptionsFile.h in Sources */ = {isa = PBXBuildFile; fileRef = F9077E962F54F9CB006FCF37 /* OptionsFile.h */; };
 		F9077E992F54F9CB006FCF37 /* OptionsFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9077E972F54F9CB006FCF37 /* OptionsFile.cpp */; };
+		F9EC6B8D2F5629E700F30A32 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EC6B8C2F5629E700F30A32 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1872,6 +1873,7 @@
 		F9077E912F54F8DC006FCF37 /* Slider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Slider.cpp; path = ../../src/client/gui/components/Slider.cpp; sourceTree = "<group>"; };
 		F9077E962F54F9CB006FCF37 /* OptionsFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OptionsFile.h; path = ../../src/client/OptionsFile.h; sourceTree = "<group>"; };
 		F9077E972F54F9CB006FCF37 /* OptionsFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OptionsFile.cpp; path = ../../src/client/OptionsFile.cpp; sourceTree = "<group>"; };
+		F9EC6B8C2F5629E700F30A32 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3705,6 +3707,7 @@
 		D5CF9C37144C225000E4244F = {
 			isa = PBXGroup;
 			children = (
+				F9EC6B8C2F5629E700F30A32 /* Launch Screen.storyboard */,
 				F9077E962F54F9CB006FCF37 /* OptionsFile.h */,
 				F9077E972F54F9CB006FCF37 /* OptionsFile.cpp */,
 				F9077E902F54F8DC006FCF37 /* GuiElementContainer.h */,
@@ -4164,6 +4167,7 @@
 				D5ACF26F15C03DBF00E21C22 /* sand2.m4a in Resources */,
 				D5ACF27115C03DBF00E21C22 /* sand3.m4a in Resources */,
 				D5ACF27315C03DBF00E21C22 /* sand4.m4a in Resources */,
+				F9EC6B8D2F5629E700F30A32 /* Launch Screen.storyboard in Resources */,
 				D5ACF27515C03DBF00E21C22 /* snow1.m4a in Resources */,
 				D5ACF27715C03DBF00E21C22 /* snow2.m4a in Resources */,
 				D5ACF27915C03DBF00E21C22 /* snow3.m4a in Resources */,
@@ -4677,6 +4681,10 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Ad-Hoc";
@@ -4731,6 +4739,10 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B194957-98CF-49B7-A0E7-76692B4B722D";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AppStore;
@@ -4816,6 +4828,10 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -4842,6 +4858,10 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

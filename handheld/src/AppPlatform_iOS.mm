@@ -200,17 +200,27 @@ std::string AppPlatform_iOS::getDateString(int s) {
     return std::string( [timeStamp UTF8String] );
 }
 
-int AppPlatform_iOS::getScreenWidth()  { return 480; }
-int AppPlatform_iOS::getScreenHeight() { return 320; }
+int AppPlatform_iOS::getScreenWidth()  {
+    // return 480;
+    //This original line has been commented out instead of deleted for historical purposes, it is a hardcoded width. I have replaced this with a dynamic call to scale nicely to new iDevice screens. I will also do this with height below.
+    return (int)[[UIScreen mainScreen] bounds].size.width * [[UIScreen mainScreen] scale];
+}
+
+int AppPlatform_iOS::getScreenHeight() {
+   // return 320;
+    return (int)[[UIScreen mainScreen] bounds].size.height * [[UIScreen mainScreen] scale];
+}
 
 float AppPlatform_iOS::getPixelsPerMillimeter() {
     // @note: @retina has a much higher density, however,
     //        we use 480x320 for the OpenGL context size
     BOOL isIpad = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
     if (isIpad) {
-        return 5.1968503937007879f * _viewController->viewScale;
+       // return 5.1968503937007879f * _viewController->viewScale;
+        return 8.0f;
     } else {
-        return 6.4173228346456694f * _viewController->viewScale;
+       // return 6.4173228346456694f * _viewController->viewScale;
+        return 8.0f;
     }
 }
 
