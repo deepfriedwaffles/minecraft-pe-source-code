@@ -17,6 +17,9 @@ Right now you have to compile this yourself, but there's also an Action thanks t
 
 ## Modern iDevice Support (arm64)
 
+This branch has merged with full-screen-support! Now the Github Action will make an unsigned IPA for you to download! ❤️
+full-screen-support will still be maintained seperately and merged again when stable. There are no plans to distribute another unigned "nightly" build for that branch. Sorry.
+
 To build and run the game, you have to use the `arm64-build` branch. This branch has been modernized to comply with the new C++ standards as they have changed since 2011. Also includes fixes for modern A-series chips to actually get the game running.
 
 * **Architecture:** Migrated from `armv7` to `arm64`.
